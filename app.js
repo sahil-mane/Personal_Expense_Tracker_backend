@@ -19,7 +19,8 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/expenses", expenseRoutes);
-console.log(process.env.PORT)
+
+
 
 app.use((error, req, res, next) => {
   if (error.name === "CastError") {
